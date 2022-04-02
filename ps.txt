@@ -1,0 +1,57 @@
+接口****
+
+
+/api/reguser  post
+注册接口
+
+/api/login   post
+登陆接口
+
+/my/userinfo  get
+获取用户信息接口
+
+/my/userinfo  post
+修改用户信息接口
+
+/my/updatepwd post
+修改用户密码
+
+/my/update/avatar post
+修改用户头像
+
+/my/article/cates get
+获取所有文章分类
+
+/my/article/addcates post
+新增文章分类
+
+/my/article/deletecate/:id get
+根据id 删除指定文章分类
+
+/my/article/cates/:id get
+根据id 获取文章分类数据
+
+/my/article/updatecate post
+根据id 更新文章分类数据
+
+
+
+目录****
+文件夹
+db 数据库
+node_modules  第三方包
+router  路由
+router_handelr   路由函数
+schema  验证规则
+
+文件
+app.js    入口函数
+congig.js   密码加密解密的密匙
+
+
+
+
+
+问题
+    "message": "ER_DUP_ENTRY: Duplicate entry 'DiLi' for key 'ev_article_cate.alias_UNIQUE'"
+    数据重复 也就是 设置了UQ的列 出现了一样的数据 当然 他不区分大小写 dd 和DD 算重复
